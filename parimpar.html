@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>PAR E IMPAR</title>
+</head>
+<body>
+<p id="demo"></p>
+
+<script>
+var num = 20;
+var text = "";
+var i;
+for (i = 0; i <= num; i++) {
+    if (i % 2 == 0){
+    text += i  + " Par" + "<br>";
+    } else {
+    text += i  + " Impar" + "<br>";
+    }
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

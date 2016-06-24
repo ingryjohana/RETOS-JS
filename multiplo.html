@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MULTIPLO</title>
+</head>
+<body>
+ <p id = "demo"></p>
+    <script type="text/javascript">
+	  var num = 1000;
+	  var i, sum1 = 0, sum2 = 0;
+
+	   for(i = 0; i<num; i++ ){
+	   	if (i % 3 == 0){
+	   		sum1 += i;
+
+	   }else if(i % 5 == 0){
+	   	sum2 += i;
+	   }
+	   	}
+	  suma = "la suma de los multiplos de 3 y 5 son: " + (sum1 + sum2);
+    
+	document.getElementById("demo").innerHTML = suma;
+	</script>
+
+
+
+</body>
+</html>

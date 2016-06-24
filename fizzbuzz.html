@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>fizzbuzz</title>
+</head>
+<body>
+<p id = "demo"></p>
+ <script type="text/javascript">
+  var num;
+  
+  var text =""; 
+
+    num = prompt("Ingrese un numero:");
+
+       fizzbuzz(num);
+	 function fizzbuzz(num){
+	 	
+	 		if (num % 3 == 0 && num % 5 == 0){               
+               alert ("fizzbuzz");
+
+	 		}else if(num % 5 == 0){
+	 			alert ("buzz");
+
+	 		}else if(num % 3 == 0){
+	 			alert ("fizz");
+
+	 		}else{
+	 			alert ("no cumple " + num);
+
+	 		}
+
+	 
+	 	 }
+ </script>
+
+</body>
+</html>

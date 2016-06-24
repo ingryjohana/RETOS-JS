@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>NUMERO PERFECTO</title>
+</head>
+<body>
+ <p id="demo"></p>
+ <script type="text/javascript"> 	
+	 	var num;
+	 	var i;
+	 	var sum = 0;
+	 	var text = "";
+	 num = prompt("Ingrese un numero:");
+	 	   document.write(num);
+	 	   	perfecto(num);
+
+	 function perfecto(num){
+
+	 	for(i=1; i < num; i++){ 
+
+	 	 if (num % i == 0){
+	    	sum += i;
+	        	if (sum == num){
+	        		 text = "El numero ingresado es perfecto";
+	        	} else{
+	         		 text = "El numero ingresado no es perfecto";
+	        	}
+	    	}
+	 		
+	     }
+	     	document.getElementById("demo").innerHTML = text;
+	 	}	 
+ 
+ </script>
+
+ 
+</body>
+</html>

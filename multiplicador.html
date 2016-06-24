@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiplicador de strings</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<h4>Ingresa la cadena de números a multiplicar separados por una coma</h4>
+Cadena: <input type="text" id="cadena" value=""><br><br>
+<h4>Ahora ingresa el multiplicador</h4>
+Número: <input type="number" id="num" value=""><br><br>
+
+<button onclick="multiplier()">Multiplicar</button>
+
+<script>
+
+function multiplier(){
+var numeros = document.getElementById("cadena").value;	
+var str = numeros.split(",");
+var n = document.getElementById("num").value;
+
+for(var i=0; i<str.length; i++){
+	str[i] = str[i]*n;
+}
+	alert("El resultado de la multiplicación es: " + str);
+
+}
+	
+</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Serie de Fibonacci</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<h3>Ingresa el término a calcular de la serie de Fibonacci</h3>
+Término: <input type="number" id="num" value=""><br><br>
+<button onclick="Fibonacci()">Calcular</button>
+
+<script>
+function Fibonacci(){
+var n = document.getElementById("num").value
+var n1 = 0;
+var n2 = 1;
+var actual;
+
+for(i=0; i<=n; i++){
+	if(i == 0){
+		actual = 0;
+	} else if(i==1) {
+		actual = 1;
+	} else {
+		actual = n1 + n2;
+		n1 = n2;
+		n2 = actual;
+	}
+}
+	alert("El término " + n + " de la serie de Fibonacci es: " + actual);
+}	
+
+
+</script>
+
+
+
+
+</body>
+</html>
